@@ -64,7 +64,7 @@
    top:450px;
    left:750px;
    background: #f00;
-   animation: go 1s linear infinite;
+   animation: go 2s linear infinite;
 }
 
 @keyframes go{
