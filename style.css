@@ -1,0 +1,73 @@
+*{
+  margin:0px;
+  padding:0px;
+}
+.center{
+  margin-top:50px;
+  display: flex;
+  align-content: center;
+  justify-content: center;
+}
+.main{
+  background: #000;
+  height: 600px;
+  width: 800px;
+  border: 10px solid blue;
+  border-radius: 20px;
+  position: absolute;
+}
+#ball{
+  background: #fff;
+  height:100px;
+  width: 100px;
+  border-radius: 50%;
+  position:relative;
+  top:500px;
+  left: 50px;
+  }
+  
+
+.animate{
+    animation: jump 500ms;
+}
+
+@keyframes jump {
+
+   0%{top:500px;}
+   30%{top:400px;}
+   70%{top:400px;}
+   100%{top:500px;}
+}
+/* @keyframes example {
+  0%   {left:0px; top:0px;}
+  25%  {left:500px; top:0px;}
+  50%  {left:500px; top:500px;}
+  75%  {left:0px; top:500px;}
+  100% {left:0px; top:0px;}
+}
+ */
+.hide{
+  height: 100px;
+  width: 100px;
+  position: relative;
+  top:400px;
+  left:-120px; 
+  background-color: white;
+  z-index: 100;
+}
+
+#obj{
+   height:50px;
+   width: 50px;
+   border-radius: 50%;
+   position: relative;
+   top:450px;
+   left:750px;
+   background: #f00;
+   animation: go 1s linear infinite;
+}
+
+@keyframes go{
+
+  100%{left:-50px;}
+}
